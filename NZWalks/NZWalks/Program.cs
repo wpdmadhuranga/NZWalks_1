@@ -6,17 +6,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(
-//     options =>
-// {
-//     options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
-//     {
-//         Version = "v1",
-//         Title = "NZ Walks API",
-//         Description = "API for managing New Zealand walks"
-//     });
-// }
-    );
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new() { Title = "NZWalks API", Version = "v1" });
+});
 builder.Services.AddControllers();
 
 var connectionString = builder.Configuration.GetConnectionString("NZWalksConnectionString");
@@ -29,18 +22,20 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI(
-    //     options =>
-    // {
-    //     options.SwaggerEndpoint("/swagger/v1/swagger.json", "NZ Walks API v1");
-    //     options.RoutePrefix = string.Empty; // Optional: makes Swagger UI the home page
-    // }
-        );
+    app.UseSwaggerUI(c => 
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "NZWalks API v1");
+    });
 
 }
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
+
+// Add error handling middleware here
+app.UseExceptionHandler("/error"); // Handles uncaught exceptions
+app.UseStatusCodePagesWithReExecute("/error/{0}"); // Handles HTTP status codes (404, 500, etc.)
+
 app.MapControllers();
 app.Run();
 

@@ -102,3 +102,5 @@ C:\Users\Dinusha\Desktop\NZWalks\NZWalks_1\NZWalks\NZWalks\bin\Debug\net8.0\ru\M
 C:\Users\Dinusha\Desktop\NZWalks\NZWalks_1\NZWalks\NZWalks\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Dinusha\Desktop\NZWalks\NZWalks_1\NZWalks\NZWalks\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Dinusha\Desktop\NZWalks\NZWalks_1\NZWalks\NZWalks\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Dinusha\Desktop\NZWalks\NZWalks_1\NZWalks\NZWalks\obj\Debug\net8.0\NZWalks.sourcelink.json
+C:\Users\Dinusha\Desktop\NZWalks\NZWalks_1\NZWalks\NZWalks\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll

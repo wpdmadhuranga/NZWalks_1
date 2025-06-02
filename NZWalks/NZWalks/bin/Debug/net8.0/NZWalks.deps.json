@@ -8,11 +8,12 @@
     ".NETCoreApp,Version=v8.0": {
       "NZWalks/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.OpenApi": "8.0.16",
           "Microsoft.EntityFrameworkCore": "8.0.0",
           "Microsoft.EntityFrameworkCore.Design": "8.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "8.0.0",
           "Pomelo.EntityFrameworkCore.MySql": "8.0.0",
-          "Swashbuckle.AspNetCore": "8.0.0"
+          "Swashbuckle.AspNetCore": "6.6.0-preview.322"
         },
         "runtime": {
           "NZWalks.dll": {}
@@ -23,6 +24,17 @@
           "lib/net6.0/Humanizer.dll": {
             "assemblyVersion": "2.14.0.0",
             "fileVersion": "2.14.1.48190"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.OpenApi/8.0.16": {
+        "dependencies": {
+          "Microsoft.OpenApi": "1.6.14"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "assemblyVersion": "8.0.16.0",
+            "fileVersion": "8.0.1625.21611"
           }
         }
       },
@@ -367,11 +379,11 @@
         }
       },
       "Microsoft.Extensions.Primitives/8.0.0": {},
-      "Microsoft.OpenApi/1.6.23": {
+      "Microsoft.OpenApi/1.6.14": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {
-            "assemblyVersion": "1.6.23.0",
-            "fileVersion": "1.6.23.0"
+            "assemblyVersion": "1.6.14.0",
+            "fileVersion": "1.6.14.0"
           }
         }
       },
@@ -409,41 +421,41 @@
           }
         }
       },
-      "Swashbuckle.AspNetCore/8.0.0": {
+      "Swashbuckle.AspNetCore/6.6.0-preview.322": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "6.0.5",
-          "Swashbuckle.AspNetCore.Swagger": "8.0.0",
-          "Swashbuckle.AspNetCore.SwaggerGen": "8.0.0",
-          "Swashbuckle.AspNetCore.SwaggerUI": "8.0.0"
+          "Swashbuckle.AspNetCore.Swagger": "6.6.0-preview.322",
+          "Swashbuckle.AspNetCore.SwaggerGen": "6.6.0-preview.322",
+          "Swashbuckle.AspNetCore.SwaggerUI": "6.6.0-preview.322"
         }
       },
-      "Swashbuckle.AspNetCore.Swagger/8.0.0": {
+      "Swashbuckle.AspNetCore.Swagger/6.6.0-preview.322": {
         "dependencies": {
-          "Microsoft.OpenApi": "1.6.23"
+          "Microsoft.OpenApi": "1.6.14"
         },
         "runtime": {
           "lib/net8.0/Swashbuckle.AspNetCore.Swagger.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.0.1197"
+            "assemblyVersion": "6.6.0.0",
+            "fileVersion": "6.6.0.322"
           }
         }
       },
-      "Swashbuckle.AspNetCore.SwaggerGen/8.0.0": {
+      "Swashbuckle.AspNetCore.SwaggerGen/6.6.0-preview.322": {
         "dependencies": {
-          "Swashbuckle.AspNetCore.Swagger": "8.0.0"
+          "Swashbuckle.AspNetCore.Swagger": "6.6.0-preview.322"
         },
         "runtime": {
           "lib/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.0.1197"
+            "assemblyVersion": "6.6.0.0",
+            "fileVersion": "6.6.0.322"
           }
         }
       },
-      "Swashbuckle.AspNetCore.SwaggerUI/8.0.0": {
+      "Swashbuckle.AspNetCore.SwaggerUI/6.6.0-preview.322": {
         "runtime": {
           "lib/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.0.1197"
+            "assemblyVersion": "6.6.0.0",
+            "fileVersion": "6.6.0.322"
           }
         }
       },
@@ -553,6 +565,13 @@
       "sha512": "sha512-lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.OpenApi/8.0.16": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jeZBYi62BKGRZXEkXAr9hj1L6u71HRKE7EPaZBouF1xmKdQIX7GO5oSRLTQLQmmST0y/aaI+Mr4OzyyRjmBFog==",
+      "path": "microsoft.aspnetcore.openapi/8.0.16",
+      "hashPath": "microsoft.aspnetcore.openapi.8.0.16.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
       "type": "package",
@@ -715,12 +734,12 @@
       "path": "microsoft.extensions.primitives/8.0.0",
       "hashPath": "microsoft.extensions.primitives.8.0.0.nupkg.sha512"
     },
-    "Microsoft.OpenApi/1.6.23": {
+    "Microsoft.OpenApi/1.6.14": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tZ1I0KXnn98CWuV8cpI247A17jaY+ILS9vvF7yhI0uPPEqF4P1d7BWL5Uwtel10w9NucllHB3nTkfYTAcHAh8g==",
-      "path": "microsoft.openapi/1.6.23",
-      "hashPath": "microsoft.openapi.1.6.23.nupkg.sha512"
+      "sha512": "sha512-tTaBT8qjk3xINfESyOPE2rIellPvB7qpVqiWiyA/lACVvz+xOGiXhFUfohcx82NLbi5avzLW0lx+s6oAqQijfw==",
+      "path": "microsoft.openapi/1.6.14",
+      "hashPath": "microsoft.openapi.1.6.14.nupkg.sha512"
     },
     "Mono.TextTemplating/2.2.1": {
       "type": "package",
@@ -743,33 +762,33 @@
       "path": "pomelo.entityframeworkcore.mysql/8.0.0",
       "hashPath": "pomelo.entityframeworkcore.mysql.8.0.0.nupkg.sha512"
     },
-    "Swashbuckle.AspNetCore/8.0.0": {
+    "Swashbuckle.AspNetCore/6.6.0-preview.322": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-K9FzGTxmwfD+7sVf/FTq/TZFHBTXcROgdcg7gLFwKwgvXwaqTtjGVdam27j0kYfgZZyWlOKr+abmtyd2nAd5eA==",
-      "path": "swashbuckle.aspnetcore/8.0.0",
-      "hashPath": "swashbuckle.aspnetcore.8.0.0.nupkg.sha512"
+      "sha512": "sha512-l1fNctXU8/d/q+ZSkjNyalORQoGE0BqSLIxthFkM8S0be6Y/JReBYUjFEXvUqMZ4COftva+Un59c7maalHHj2g==",
+      "path": "swashbuckle.aspnetcore/6.6.0-preview.322",
+      "hashPath": "swashbuckle.aspnetcore.6.6.0-preview.322.nupkg.sha512"
     },
-    "Swashbuckle.AspNetCore.Swagger/8.0.0": {
+    "Swashbuckle.AspNetCore.Swagger/6.6.0-preview.322": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+8Y4pVTWbnzotIk6d6rcwsHGpCchPDqqrvYkyGlI3go+pFaKM+4eX30iCyI0hvr0RMtObJCFhK6aDtlQFbEF1g==",
-      "path": "swashbuckle.aspnetcore.swagger/8.0.0",
-      "hashPath": "swashbuckle.aspnetcore.swagger.8.0.0.nupkg.sha512"
+      "sha512": "sha512-WvPiz07pvrkjrXUw8vyiTmzTRaJxF/uwAxBGGmIooFF/u2JJqIbwZ5zdReY1p07I/VPYNVMn3iwnd/4o8TV+Fw==",
+      "path": "swashbuckle.aspnetcore.swagger/6.6.0-preview.322",
+      "hashPath": "swashbuckle.aspnetcore.swagger.6.6.0-preview.322.nupkg.sha512"
     },
-    "Swashbuckle.AspNetCore.SwaggerGen/8.0.0": {
+    "Swashbuckle.AspNetCore.SwaggerGen/6.6.0-preview.322": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-skCeIQ93yMcUm1PQby5qitFM6KLIlLMj4/i8JHy86x2OFzxTNaaas2kUg6rNV3JvucFvYCNyImg7NMtZHErSzQ==",
-      "path": "swashbuckle.aspnetcore.swaggergen/8.0.0",
-      "hashPath": "swashbuckle.aspnetcore.swaggergen.8.0.0.nupkg.sha512"
+      "sha512": "sha512-AEvWiOjSlXihl8aQtMjLTd3523FEQAlq5rs+VNZEnIK/dGhqCJoubLMJ3uIBpigKGzafghBh1XNv/cJXyyP6nQ==",
+      "path": "swashbuckle.aspnetcore.swaggergen/6.6.0-preview.322",
+      "hashPath": "swashbuckle.aspnetcore.swaggergen.6.6.0-preview.322.nupkg.sha512"
     },
-    "Swashbuckle.AspNetCore.SwaggerUI/8.0.0": {
+    "Swashbuckle.AspNetCore.SwaggerUI/6.6.0-preview.322": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-IMqmgclFiZL2QIfopOmWYofZzckrl+SdMt1h4mKC0jc94F+uzt3IHA3YFC0CGlwBqTTSnxHqNUKomNTeAhZbYA==",
-      "path": "swashbuckle.aspnetcore.swaggerui/8.0.0",
-      "hashPath": "swashbuckle.aspnetcore.swaggerui.8.0.0.nupkg.sha512"
+      "sha512": "sha512-de9j/M1dEckOP5JHA5hgihekbCXXKkYoC1noEL2stvgzEglaSj1HOds8gmKyXgPOygfPAraPWgPOz4BJfcpwxg==",
+      "path": "swashbuckle.aspnetcore.swaggerui/6.6.0-preview.322",
+      "hashPath": "swashbuckle.aspnetcore.swaggerui.6.6.0-preview.322.nupkg.sha512"
     },
     "System.CodeDom/4.4.0": {
       "type": "package",
