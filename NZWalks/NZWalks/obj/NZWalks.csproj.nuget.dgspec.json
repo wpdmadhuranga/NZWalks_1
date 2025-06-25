@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dinusha\\Desktop\\NZWalks\\NZWalks_1\\NZWalks\\NZWalks\\NZWalks.csproj": {}
+    "C:\\Users\\Dinusha\\Documents\\projects\\GITproject\\NZWalks\\NZWalks_1\\NZWalks\\NZWalks\\NZWalks.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dinusha\\Desktop\\NZWalks\\NZWalks_1\\NZWalks\\NZWalks\\NZWalks.csproj": {
+    "C:\\Users\\Dinusha\\Documents\\projects\\GITproject\\NZWalks\\NZWalks_1\\NZWalks\\NZWalks\\NZWalks.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dinusha\\Desktop\\NZWalks\\NZWalks_1\\NZWalks\\NZWalks\\NZWalks.csproj",
+        "projectUniqueName": "C:\\Users\\Dinusha\\Documents\\projects\\GITproject\\NZWalks\\NZWalks_1\\NZWalks\\NZWalks\\NZWalks.csproj",
         "projectName": "NZWalks",
-        "projectPath": "C:\\Users\\Dinusha\\Desktop\\NZWalks\\NZWalks_1\\NZWalks\\NZWalks\\NZWalks.csproj",
+        "projectPath": "C:\\Users\\Dinusha\\Documents\\projects\\GITproject\\NZWalks\\NZWalks_1\\NZWalks\\NZWalks\\NZWalks.csproj",
         "packagesPath": "C:\\Users\\Dinusha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dinusha\\Desktop\\NZWalks\\NZWalks_1\\NZWalks\\NZWalks\\obj\\",
+        "outputPath": "C:\\Users\\Dinusha\\Documents\\projects\\GITproject\\NZWalks\\NZWalks_1\\NZWalks\\NZWalks\\obj\\",
         "projectStyle": "PackageReference",
         "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
@@ -44,6 +44,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.16, )"

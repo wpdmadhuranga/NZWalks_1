@@ -1,5 +1,7 @@
 using NZWalks.Data;
 using Microsoft.EntityFrameworkCore;
+using NZWalks.Mapping;
+using NZWalks.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +17,8 @@ builder.Services.AddControllers();
 var connectionString = builder.Configuration.GetConnectionString("NZWalksConnectionString");
 builder.Services.AddDbContext<NZWalksDbContext1>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+builder.Services.AddScoped<IRegionResitory, MySQLRegionReository>();
+builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 
 var app = builder.Build();
 
